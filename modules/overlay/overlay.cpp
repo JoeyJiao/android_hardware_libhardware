@@ -133,6 +133,10 @@ static overlay_t* overlay_createOverlay(struct overlay_control_device_t *dev,
         case OVERLAY_FORMAT_RGB_565:
         case OVERLAY_FORMAT_BGRA_8888:
         // add supported format here (especially YUV formats)
+	case OVERLAY_FORMAT_YCbCr_422_SP:
+	case OVERLAY_FORMAT_YCbCr_420_SP:
+	case OVERLAY_FORMAT_YCbCr_422_I:
+	case OVERLAY_FORMAT_YCbCr_420_I:
             break;
         default:
             return NULL;
